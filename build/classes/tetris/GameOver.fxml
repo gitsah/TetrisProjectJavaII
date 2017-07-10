@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tetris.FXMLDocumentController">
+   <children>
+      <Label id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="63.0" prefHeight="88.0" prefWidth="196.0" text="TETRIS">
+         <font>
+            <Font name="Impact" size="64.0" />
+         </font>
+      </Label>
+      <Label id="GAME" alignment="CENTER" layoutX="155.0" layoutY="169.0" prefHeight="65.0" prefWidth="122.0" text="GAME">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label id="OVER" alignment="CENTER" layoutX="158.0" layoutY="216.0" prefHeight="59.0" prefWidth="116.0" text="OVER">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="Quit" layoutX="179.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="73.0" text="Quit" />
+      <Button fx:id="PlayAgain" layoutX="176.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="79.0" text="Play Again" />
+      <Button fx:id="MainMenu" layoutX="176.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="79.0" text="Main Menu" />
+      <Label layoutX="126.0" layoutY="309.0" text="Score has been recorded!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+   <URL value="@Style.css" />
+ </stylesheets>
+</Pane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tetris.FXMLDocumentController">
+   <children>
+      <HBox layoutX="97.0" layoutY="207.0" prefHeight="27.0" prefWidth="237.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="79.0" text="Username: " />
+            <TextField fx:id="UsernameUp" onAction="#handleButtonAction">
+               <HBox.margin>
+                  <Insets left="3.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="97.0" layoutY="248.0" prefHeight="27.0" prefWidth="237.0" spacing="6.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="76.0" text="Password: " />
+            <PasswordField fx:id="PasswordUp" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="149.0" />
+         </children>
+      </HBox>
+      <Label id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="63.0" prefHeight="88.0" prefWidth="195.0" text="TETRIS">
+         <font>
+            <Font name="Impact" size="64.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="ConfirmPassUp" layoutX="179.0" layoutY="290.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="Registering" alignment="CENTER" layoutX="9.0" layoutY="170.0" prefHeight="21.0" prefWidth="403.0" />
+      <Label layoutX="97.0" layoutY="270.0" prefHeight="53.0" prefWidth="76.0" text="Confirm Password:" wrapText="true" />
+      <Button fx:id="Register" layoutX="190.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="73.0" text="Register" />
+      <Button fx:id="Back" layoutX="190.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="73.0" text="Back" />
+   </children>
+  <stylesheets>
+   <URL value="@Style.css" />
+ </stylesheets>
+</Pane>
